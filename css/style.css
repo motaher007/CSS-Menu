@@ -1,0 +1,65 @@
+/* Common CSS start here*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common CSS end here*/
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* nav starts here */
+
+nav{
+    background-color: blueviolet;
+    height: 50px;
+
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul li{
+
+    display: inline-block;
+}
+
+nav ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 15px 100px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li:hover a{
+
+    background-color: brown;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: rgb(76, 0, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.8s;
+
+}
+
+nav ul li:hover ::after{
+
+    width: 100%;
+
+
+}
+/* nav end here */ 
